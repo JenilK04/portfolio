@@ -1,10 +1,12 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: 'export', // Compiles Next.js down to standard static HTML/CSS/JS
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export', // Keeps your static HTML export active
   images: {
-    unoptimized: true, // Required for static export to work with next/image
+    unoptimized: true,
   },
+  // Replace 'portfolio' with your exact GitHub repository name string
+  basePath: '/portfolio',
+  assetPrefix: '/portfolio/',
 };
 
 export default nextConfig;
