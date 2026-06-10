@@ -1,12 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export', // Keeps your static HTML export active
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: "export",       // Compiles down to standard static HTML/CSS/JS
   images: {
-    unoptimized: true,
+    unoptimized: true,    // Required for static export to load public assets properly
   },
-  // Replace 'portfolio' with your exact GitHub repository name string
-  basePath: '/portfolio/app',
-  assetPrefix: '/portfolio/app/',
+  basePath: "/portfolio",   // Injects your exact GitHub repository path
+  assetPrefix: "/portfolio/", // Forces subfolders to fetch assets from the correct relative path
 };
 
 export default nextConfig;
