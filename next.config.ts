@@ -5,8 +5,8 @@ const nextConfig = {
     unoptimized: true,
   },
   // Replace 'portfolio' with your exact GitHub repository name string
-  basePath: '/portfolio',
-  assetPrefix: '/portfolio/',
+  basePath: '/portfolio/app',
+  assetPrefix: '/portfolio/app/',
 };
 
 export default nextConfig;
